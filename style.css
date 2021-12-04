@@ -27,3 +27,35 @@ body {
 h1 {
     font-size: 16rem;
 }
+
+.cookies {
+    position: fixed; /* Placée au-dessus des autres éléments */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Nécessaire de préciser une width si position: fixed; */
+    background-color: grey;
+    display: flex; /* Alignement des éléments enfants */
+    justify-content: space-between; /* Positionnement des div enfants */
+    align-items: center; /* centrer verticalement */
+    padding: 3rem;
+    opacity: 1; /* Modification de cette valeur en JS, pour faire disparaître la bannière*/
+}
+
+.cookies-btn {
+    display: flex;
+}
+
+.btn {
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-success {
+    background-color: #1e2337;
+}
+
+.btn-deny {
+    background-color: grey;
+}
